@@ -5,8 +5,10 @@
       <Field CaptionHtml="Wybierz definicje projektu" Width="*" EditValue="{DefProjektu}"/>
       <Field CaptionHtml="Wybierz definicje zadania, do którego ma być dodawany dok handlowy" Width="*" EditValue="{DefZadania}"/>
       <Field CaptionHtml="Wybierz definicje Dokumentu handlowego, dla którego ma być dostępne Tworzenie projektu" Width="*" EditValue="{DefDokHandlowego}"/>
-      <Field CaptionHtml="Wybierz definicje Magayznu, dla którego ma być dostępne Tworzenie projektu" Width="*" EditValue="{Magazyn}"/>
-      <Field CaptionHtml="Wybierz definicje Towaru, dla którego ma być dostępne Tworzenie projektu" Width="*" EditValue="{TowarDoFakturyCyklicznej}"/>
+      </Group>
+    <Group CaptionHtml="Konfiguracja wystawiania faktur z zadań" >
+      <Field CaptionHtml="Wybierz definicje Magayznu, dla którego ma się tworzyć faktura" Width="*" EditValue="{Magazyn}"/>
+      <Field CaptionHtml="Wybierz usługę, która ma się pojawić jako poz. na DokHandlowym" Width="*" EditValue="{TowarDoFakturyCyklicznej}"/>
     </Group>
     <Group>
     </Group>
