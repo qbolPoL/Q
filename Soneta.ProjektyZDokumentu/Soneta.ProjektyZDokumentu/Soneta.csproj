@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Soneta.Sdk">
+  <PropertyGroup>
+    <TargetFramework>$(SonetaTargetFramework)</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Program Files (x86)\Common Files\Soneta\Assemblies\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="ZakladkaUstawieniaWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Config.Soneta.ProjektyZDokumentu.pageform" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OPCJE\Config.ZakladkaUstawieniaWorker.pageform.xml" />
+  </ItemGroup>
+</Project>

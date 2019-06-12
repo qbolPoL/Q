@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Soneta": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files (x86)\\Soneta\\enova365 1905.0.1.16126\\SonetaExplorer32.exe",
+      "commandLineArgs": "/extpath=\"C:\\Program Files (x86)\\Common Files\\Soneta\\Assemblies\\net46\""
+    }
+  }
+}
