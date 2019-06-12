@@ -61,7 +61,7 @@ namespace Soneta.COMPACT
                 
 
                 DokH.Kontrahent = @params.kontrahent;
-                DokH.Opis = $"Faktura za usługi w okresie {@params.okres.From}-{@params.okres.To}";
+                DokH.Opis = $"Faktura za usługi w okresie {@params.okres.From}--{@params.okres.To}";
                 var time = Soneta.Types.Time.Zero;
                 var PodsumowanieWartosci = SumowanieWartosciCRM.Przychód;
 
