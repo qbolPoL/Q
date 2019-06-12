@@ -43,8 +43,6 @@ namespace Soneta.COMPACT
                 var projekt = new Soneta.Zadania.Projekt();
                 ZM.Projekty.AddRow(projekt);
                 projekt.Definicja = (DefProjektu)ZapiszOdczytFeature.OdczytFeature("DefProjektu", ref session);
-                var zparams = ((ZadaniaParams)Ctx[typeof(ZadaniaParams)]);
-                Weryfikacja(zparams);
 
                 projekt.Nazwa = $"{@params.kontrahent.NazwaFormatowana} {@params.okres.ToString()}";
                 projekt.Kontrahent = @params.kontrahent;
@@ -97,15 +95,7 @@ namespace Soneta.COMPACT
                 return DokH;
             }
         }
-        public void Weryfikacja(ZadaniaParams zadaniaParams)
-        {
-
-            //if (zadaniaParams.Kontrahent == null)
-            //    throw new Exception("Uzupełnij kontrahenta w filtrze");
-
-            if (zadaniaParams.Okres == FromTo.Empty)
-                throw new Exception("Uzupełnij okres w filtrze");
-        }
+       
     }
     public class WystawFaktureWorkerParams : ContextBase
     {
